@@ -1,28 +1,13 @@
-import {
-  ContainerHome,
-  DashBoardTitulo,
-  DashBoardPainelGest,
-  DashBoardPainelAusentes,
-  DashBoardPainelCirculacao,
-} from "./styles";
+import { Container, Hero, CTAButton } from './styles';
 
-
-export function Home() {
+export default function Home() {
   return (
-    <ContainerHome>
-      <DashBoardPainelGest>
-        <DashBoardTitulo>Painel de Gestão</DashBoardTitulo>
-        <h2>Resumo Geral</h2>
-        <p>Total de motoristas: <strong>15</strong></p>
-      </DashBoardPainelGest>
-      <DashBoardPainelAusentes>
-        <DashBoardTitulo>Tarefas Pendentes</DashBoardTitulo>
-        <p>Sem tarefas no momento.</p>
-      </DashBoardPainelAusentes>
-      <DashBoardPainelCirculacao>
-        <DashBoardTitulo>Fora de Circulação</DashBoardTitulo>
-        <p>Nenhum veículo fora de circulação.</p>
-      </DashBoardPainelCirculacao>
-    </ContainerHome>
+    <Container>
+      <Hero>
+        <h1>Registre sua marca com segurança</h1>
+        <p>Proteja o nome do seu negócio com assessoria especializada.</p>
+        <CTAButton href="#contato">Quero registrar agora</CTAButton>
+      </Hero>
+    </Container>
   );
 }
